@@ -8,7 +8,7 @@ public class Main {
 			@Override
 			
 			public void run() {
-				GUI gui = new GUI();
+				Interfaz gui = new Interfaz();
 				gui.Display();
 			}
 		});	
