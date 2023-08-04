@@ -18,7 +18,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 
-public class GUI extends JFrame {   
+public class Interfaz extends JFrame {   
 	private JTextArea processArea;
 	public final JButton checkButton;
 	public final JButton selectButton;
@@ -31,7 +31,7 @@ public class GUI extends JFrame {
 	private static ArrayList<String> bd;
 	private static String file;
 
-	public GUI() {
+	public Interfaz() {
 		this.processLabel = new JLabel("Estado:");
 		this.dirLabel = new JLabel("Detector de Plagios ");
 		this.selectButton = new JButton("Subir archivos a la Base de Ddatos");
@@ -50,7 +50,7 @@ public class GUI extends JFrame {
 		setMaximumSize(new Dimension(999, 200));
 
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setTitle("JAM Plagiarism Checker");
+		setTitle("Plagiarism Checker");
 
 		contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.PAGE_AXIS));
 		contentPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
